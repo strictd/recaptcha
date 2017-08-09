@@ -3,6 +3,19 @@
 ## Typescript only library for implementing google recaptcha
 
 ## NGX Implementation
+### NgModule Addition, import recaptcha component to declarations
+```ts
+import { RecaptchaComponent } from '@strictd/recaptcha';
+
+@NgModule({
+  declarations: [
+    RecaptchaComponent
+  ]
+})
+```
+
+
+### Component TS / HTML Addition
 ```ts
 @ViewChild('reCaptcha') reCaptcha;
 
