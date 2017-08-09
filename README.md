@@ -49,28 +49,30 @@ recaptchaReset() {
 
 ## Server Side API validation
 ```
-  const captcaForm = {
-    secret: google_captcha_secret,
-    response: body.recaptcha,
-    remoteip: ''
-  };
+import { post } from 'request';
 
-  // Optional Remote IP address of client
-  try {
-    captcaForm.remoteip = req.connection.remoteAddress;
-  } catch (e) { }
+const captcaForm = {
+  secret: google_captcha_secret,
+  response: body.recaptcha,
+  remoteip: ''
+};
 
-  // Check Captcha
-  post('https://www.google.com/recaptcha/api/siteverify',
-    { form: captcaForm },
-    (error, response) => {
-      if (!error && response.statusCode === 200) {
-        // Good Validation
+// Optional Remote IP address of client
+try {
+  captcaForm.remoteip = req.connection.remoteAddress;
+} catch (e) { }
 
-      } else {
-        // Bad Validation
+// Check Captcha
+post('https://www.google.com/recaptcha/api/siteverify',
+  { form: captcaForm },
+  (error, response) => {
+    if (!error && response.statusCode === 200) {
+      // Good Validation
 
-      }
+    } else {
+      // Bad Validation
+
     }
-  );
-  ```
+  }
+);
+```
