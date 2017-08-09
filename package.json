@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "google recaptcha addon utility",
   "main": "recaptcha.ts",
-  "author": "Gary Taylor gary@strictdev.com",
-  "license": "MIT"
+  "author": "Gary Taylor <gary@strictdev.com>",
+  "license": "MIT",
+  "repository": { "type" : "git", "url" : "https://github.com/strictd/recaptcha.git" }
 }
