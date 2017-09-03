@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "sourceMap": false,
-    "noEmitHelpers": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "declaration": true,
@@ -14,7 +13,7 @@
     "lib": ["es2015", "dom"],
     "typeRoots": [ "../node_modules/@types" ]
   },
-  "include": ["src/"],
+  "include": ["index.ts"],
   "exclude": [
     "node_modules",
     "dist",
