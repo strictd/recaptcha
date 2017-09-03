@@ -1,6 +1,6 @@
 {
   "name": "@strictd/recaptcha",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "google recaptcha addon utility",
   "main": "index.js",
   "author": "Gary Taylor <gary@strictdev.com>",
