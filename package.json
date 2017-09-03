@@ -2,8 +2,18 @@
   "name": "@strictd/recaptcha",
   "version": "1.0.4",
   "description": "google recaptcha addon utility",
-  "main": "recaptcha.ts",
+  "main": "index.js",
   "author": "Gary Taylor <gary@strictdev.com>",
   "license": "MIT",
-  "repository": { "type" : "git", "url" : "https://github.com/strictd/recaptcha.git" }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strictd/recaptcha.git"
+  },
+  "scripts": {
+    "prepublish": "tsc -p ./ --outDir ./"
+  },
+  "dependencies": {
+    "@angular/core": "^4.3.6",
+    "rxjs": "^5.4.3"
+  }
 }
