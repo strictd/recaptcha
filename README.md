@@ -1,6 +1,7 @@
 ### NGX Google Recaptcha Component
 
-## Typescript only library for implementing google recaptcha
+## Typescript library for implementing google recaptcha
+## Compatible with Ionic2
 
 ## NGX Implementation
 ### NgModule Addition, import recaptcha component to declarations
@@ -22,14 +23,12 @@ import { RecaptchaComponent } from '@strictd/recaptcha';
 recaptchaSiteKey = ''; // <-- YOU GOOGLE RECAPTCHA SITE KEY GOES HERE
 gotCaptcha = false;
 
-recaptchaResolved(got) {
+recaptchaResolved(got: any) {
   this.gotCaptcha = got;
-  this.form.recaptcha = got;
 }
 
 recaptchaExpired() {
   this.gotCaptcha = false;
-  this.form.recaptcha = '';
 }
 
 recaptchaReset() {
