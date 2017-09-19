@@ -18,7 +18,7 @@ import { RecaptchaComponent } from '@strictd/recaptcha';
 
 ### Component TS / HTML Addition
 ```ts
-@ViewChild('reCaptcha') reCaptcha;
+@ViewChild('reCaptcha') reCaptcha: any;
 
 recaptchaSiteKey = ''; // <-- YOU GOOGLE RECAPTCHA SITE KEY GOES HERE
 gotCaptcha = false;
