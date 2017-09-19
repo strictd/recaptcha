@@ -47,7 +47,7 @@ export class RecaptchaComponent implements OnInit, OnDestroy {
       grecaptcha.render('g-recaptcha', params);
     }
   }
-  recaptchaResolved(evt) {
+  recaptchaResolved(evt: any) {
     this.ngZone.run(() => {
       this.resolved.emit(evt);
     });
